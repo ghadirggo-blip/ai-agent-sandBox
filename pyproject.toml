@@ -10,3 +10,9 @@ dependencies = [
     "python-dotenv==1.1.0",
     "streamlit>=1.64.0",
 ]
+[project.scripts]
+run-agent = "core.main:main"
+
+
+[tool.setuptools]
+packages = ["core", "functions", "ui", "shema"]
