@@ -5,6 +5,9 @@ from functions.get_files_info import get_files_info
 from functions.get_file_content import get_file_content
 from functions.run_python_file import run_python_file
 from functions.write_file import write_file
+from functions.search_cpp import search_in_files
+
+
 
 def call_function(tool_call, verbose: bool = False) -> dict:
     #The tool_call argument is one of the tool-call objects from message.tool_calls
@@ -32,6 +35,7 @@ def call_function(tool_call, verbose: bool = False) -> dict:
         "get_file_content": get_file_content,
         "run_python_file": run_python_file,
         "write_file": write_file,
+        "search_in_files":search_in_files
     }
 
     #3 if function does not exist
